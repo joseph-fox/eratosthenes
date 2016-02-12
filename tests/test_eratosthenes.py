@@ -4,6 +4,7 @@ from eratosthenes import get_prime
 
 
 class TestEratosthenes(unittest.TestCase):
+
     def setUp(self):
         self.sequence = range(2, 101)
 
@@ -18,7 +19,3 @@ class TestEratosthenes(unittest.TestCase):
         nums = get_prime(self.sequence)
 
         self.assertItemsEqual(nums, expected_nums)
-
-
-if __name__ == '__main__':
-    unittest.main()
