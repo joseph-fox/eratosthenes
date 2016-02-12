@@ -1,7 +1,7 @@
 from itertools import count
 
 
-def eratosthenes(seq=None):
+def get_prime(seq=None):
     if seq:
         sequence = seq
     else:

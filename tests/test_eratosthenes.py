@@ -1,6 +1,6 @@
 import unittest
 
-from ..eratosthenes import eratosthenes
+from eratosthenes import get_prime
 
 
 class TestEratosthenes(unittest.TestCase):
@@ -15,7 +15,7 @@ class TestEratosthenes(unittest.TestCase):
             83, 89, 97
         ]
 
-        nums = eratosthenes(self.sequence)
+        nums = get_prime(self.sequence)
 
         self.assertItemsEqual(nums, expected_nums)
 
